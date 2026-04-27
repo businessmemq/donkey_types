@@ -8,6 +8,12 @@ const categoryFilter = document.getElementById("categoryFilter");
 const products = document.querySelectorAll(".product");
 
 let cart = [];
+const savedCart = localStorage.getItem("cart");
+if (savedCart) {
+    cart = JSON.parse(savedCart);
+    renderCart();
+}
+
 function renderCart() {
     cartList.innerHTML = "";
     let total = 0;
@@ -26,7 +32,12 @@ function renderCart() {
         li.appendChild(removeBtn);
         cartList.appendChild(li);
     })
-    totalPrice.textContent = `Итого: ${total} рублей`
+    totalPrice.textContent = `Итого: ${total} рублей`;
+    saveCart()
+}
+
+function saveCart() {
+    localStorage.setItem("cart", JSON.stringify(cart))
 }
 
 addCart.forEach((button) => {

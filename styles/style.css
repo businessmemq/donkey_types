@@ -1,0 +1,38 @@
+body {
+
+background:rgb(130, 162, 232);
+}
+h1 {
+text-align: center;
+color: blue;
+}
+a {
+    color: red;
+    font-size: large;
+    font-style: italic
+}
+ul {
+    list-style-type: none;
+}
+h3 {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+}
+#description {
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+#detailed_description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+#characteristics {
+    font-size: 20px;
+    font-style: oblique;
+    line-height: 30px;
+    list-style-image: url(../images/list_marker1.jpg);
+}

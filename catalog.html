@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang = "ru">
+<head>
+    <title>Виды ослов</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+    <h3>Меню</h3>
+    <ul>
+        <li><a href = "index.html">Главная</a></li>
+        <li><a href = "catalog.html">Каталог</a></li>
+    </ul>
+    <hr>
+    <h1>Каталог</h1>
+    <h3>Фильтр</h3>
+    <label for = "categoryFilter">Категория:</label>
+    <select id = "categoryFilter">
+        <option value = "all">Все</option>
+        <option value = "wild">Дикий</option>
+        <option value = "home">Домашний</option>
+    </select>
+    <div
+        class = "product"
+        data-name = "Веселый осел"
+        data-price = "10000"
+        data-category = "wild"
+    >
+        <img src = "images/funny.jpg" alt = "веселый" width = 200 height = 200>
+        <br>
+        <a href = "веселый осел.html">Веселый осел </a>
+        <button class = "addCart">Добавить в корзину</button>
+    </div>
+    <div
+        class = "product"
+        data-name = "Грустный осел"
+        data-price = "12000"
+        data-category = "home"
+    >
+        <img src = "images/sad.jpg" alt = "грустный" width = 200 height = 200>
+        <br>
+        <a href = "грустный осел.html">Грустный осел </a>
+        <button class = "addCart">Добавить в корзину</button>
+    </div>
+    <div
+        class = "product"
+        data-name = "Игривый осел"
+        data-price = "15000"
+        data-category = "home"
+    >
+        <img src = "images/playful.jpg" alt = "игривый" width = 200 height = 200>
+        <br>
+        <a href = "игривый осел.html">Игривый осел </a>
+        <button class = "addCart">Добавить в корзину</button>
+    </div>
+    <div
+        class = "product"
+        data-name = "Задумчивый осел"
+        data-price = "13000"
+        data-category = "wild"
+    >
+        <img src = "images/pensive.jpg" alt = "задумчивый" width = 200 height = 200>
+        <br>
+        <a href = "задумчивый осел.html">Задумчивый осел </a>
+        <button class = "addCart">Добавить в корзину</button>
+    </div>
+
+    <h3>Корзина:</h3>
+    <ol id = "cartList"></ol>
+    <p id = "totalPrice">Итого: 0 рублей</p>
+    <button id = "payBtn">Оплатить</button>
+    <button id = "clearCart">Очистить корзину</button>
+    <hr>
+    <i>Все права защищены©</i>
+    <script src = "scripts/script.js"></script>
+</body>
+</html>
